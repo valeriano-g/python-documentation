@@ -1,0 +1,163 @@
+:root {
+    --body-background: #f9f8f9;
+    --header-border: #32a1ce;
+    --header-color: #3371A1;
+    --nav-border: gray;
+    --nav-background: #FFE568;
+    --border-link: #32a1ce;
+    --nav-link-hover: #3371A1;
+    --nav-link-color: gray;
+    --code-background: #f6f7fa;
+
+}
+
+
+
+#nav-head {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+}
+
+
+body {
+
+    background-color: var(--body-background);
+}
+
+
+
+.img-header {
+    padding-top: 0px;
+    max-width: 100%;
+    height: auto;
+
+
+
+}
+
+
+
+
+header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    padding: 12px;
+    display: flex;
+    border-bottom: thick double var(--header-border);
+    text-transform: capitalize;
+    color: var(--header-color);
+
+
+}
+
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 300px;
+    border-right: solid var(--nav-border);
+    overflow: hidden;
+    border: 1px solid;
+    background-color: var(--nav-background);
+
+}
+
+.link {
+    text-align: center;
+    list-style: none;
+    border-bottom: thick double var(--border-link);
+
+}
+
+.nav-link:visited:hover {
+    color: var(--nav-link-hover);
+
+}
+
+
+.nav-link:hover {
+    font-size: 22px;
+    transition: 1s;
+
+
+
+
+}
+
+.nav-link {
+
+    color: var(--nav-link-color);
+    line-height: 2;
+    text-decoration: none;
+    font-size: 18.5px;
+    padding: 10px 9px 0px;
+    text-transform: capitalize;
+
+
+
+
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 300px;
+    padding: 15px;
+
+
+}
+
+ul {
+    list-style: inside;
+    padding: 10px
+}
+
+
+p {
+    padding: 3px
+}
+
+
+code {
+
+    background-color: var(--code-background);
+
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+@media screen and (max-width:599px) {
+
+    .img-header {
+
+        width: 100%;
+        height: auto;
+
+
+    }
+
+
+
+
+    #navbar {
+        position: static;
+        margin: auto;
+        width: 400px
+    }
+
+    #main-doc {
+        margin-left: auto;
+        padding: 17px
+    }
+
+
+}
