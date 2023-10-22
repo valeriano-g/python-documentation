@@ -135,7 +135,7 @@ code {
     white-space: pre-wrap;
 }
 
-@media screen and (max-width:599px) {
+@media screen and (max-width:768px) {
 
     .img-header {
 
